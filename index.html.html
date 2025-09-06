@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button onclick="navigator.geolocation.getCurrentPosition(
+      p=>document.body.innerHTML=`Lat: ${p.coords.latitude}, Lng: ${p.coords.longitude}`,
+      e=>alert(e.message)
+    )">Share Location</button>
+  </body>
+</html>
